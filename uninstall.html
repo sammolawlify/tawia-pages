@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Au revoir - Tawia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 600px;
+      width: 100%;
+      padding: 48px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      color: #1a1a2e;
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .data-info {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+
+    .data-info h2 {
+      color: #856404;
+      font-size: 18px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .data-info p {
+      color: #664d03;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .data-info ul {
+      color: #664d03;
+      font-size: 14px;
+      margin-top: 12px;
+      padding-left: 20px;
+    }
+
+    .data-info li {
+      margin-bottom: 8px;
+    }
+
+    .reinstall-section {
+      background: #e8f5e9;
+      border: 1px solid #4caf50;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+
+    .reinstall-section h2 {
+      color: #2e7d32;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .reinstall-section p {
+      color: #1b5e20;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 16px;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .feedback-section {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+    }
+
+    .feedback-section p {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .feedback-link {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    .feedback-link:hover {
+      text-decoration: underline;
+    }
+
+    .steps {
+      text-align: left;
+      margin-top: 16px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .step-number {
+      background: #667eea;
+      color: white;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      color: #1b5e20;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">👋</div>
+    <h1>Au revoir et merci !</h1>
+    <p class="subtitle">
+      Nous sommes tristes de vous voir partir. Merci d'avoir utilisé Tawia pour organiser vos idées.
+    </p>
+
+    <div class="data-info">
+      <h2>⚠️ Vos données ont été conservées</h2>
+      <p>
+        <strong>Bonne nouvelle !</strong> Si vous aviez exporté vos données avant la désinstallation,
+        vous pouvez les réimporter à tout moment en réinstallant l'extension.
+      </p>
+      <ul>
+        <li>Recherchez un fichier <code>tawia-backup-*.json</code> dans vos téléchargements</li>
+        <li>Si vous avez activé les backups automatiques, un fichier récent existe peut-être</li>
+        <li>Les données synchronisées avec votre compte Google peuvent être récupérées</li>
+      </ul>
+    </div>
+
+    <div class="reinstall-section">
+      <h2>🔄 Récupérer vos données</h2>
+      <p>Pour retrouver vos intrants et projets :</p>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <span class="step-text">Réinstallez Tawia depuis le Chrome Web Store</span>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <span class="step-text">Ouvrez les Paramètres (⚙️) → onglet "Données"</span>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <span class="step-text">Cliquez sur "Importer" et sélectionnez votre fichier de backup</span>
+        </div>
+      </div>
+      <a href="https://chrome.google.com/webstore/detail/tawia" class="cta-button" target="_blank">
+        Réinstaller Tawia
+      </a>
+    </div>
+
+    <div class="feedback-section">
+      <p>
+        Une suggestion pour améliorer Tawia ?
+        <a href="https://github.com/sammolawlify/tawia/issues" class="feedback-link" target="_blank">
+          Partagez votre feedback →
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
