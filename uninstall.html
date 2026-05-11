@@ -49,6 +49,45 @@
       line-height: 1.6;
     }
 
+    .feedback-section {
+      background: #f8f9fa;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .feedback-section h2 {
+      color: #1a1a2e;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .feedback-section p {
+      color: #4a5568;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .feedback-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feedback-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
     .data-info {
       background: #fff3cd;
       border: 1px solid #ffc107;
@@ -89,7 +128,6 @@
       border: 1px solid #4caf50;
       border-radius: 12px;
       padding: 24px;
-      margin-bottom: 32px;
     }
 
     .reinstall-section h2 {
@@ -106,41 +144,21 @@
 
     .cta-button {
       display: inline-block;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 14px 32px;
+      background: white;
+      color: #2e7d32;
+      border: 1px solid #2e7d32;
+      padding: 10px 24px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 16px;
-      transition: transform 0.2s, box-shadow 0.2s;
+      font-size: 14px;
+      transition: all 0.2s;
       margin-top: 16px;
     }
 
     .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-    }
-
-    .feedback-section {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #eee;
-    }
-
-    .feedback-section p {
-      color: #888;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    .feedback-link {
-      color: #667eea;
-      text-decoration: none;
-    }
-
-    .feedback-link:hover {
-      text-decoration: underline;
+      background: #2e7d32;
+      color: white;
     }
 
     .steps {
@@ -156,7 +174,7 @@
     }
 
     .step-number {
-      background: #667eea;
+      background: #4caf50;
       color: white;
       width: 24px;
       height: 24px;
@@ -183,6 +201,16 @@
     <p class="subtitle">
       Nous sommes tristes de vous voir partir. Merci d'avoir utilisé Tawia pour organiser vos idées.
     </p>
+
+    <div class="feedback-section">
+      <h2>Aidez-nous à nous améliorer</h2>
+      <p>
+        Votre avis est précieux ! Prenez 1 minute pour nous dire pourquoi vous nous quittez et comment nous pourrions faire mieux.
+      </p>
+      <a href="https://tally.so/r/WODYoe" class="feedback-button" target="_blank">
+        Partager votre feedback →
+      </a>
+    </div>
 
     <div class="data-info">
       <h2>⚠️ Vos données ont été conservées</h2>
@@ -217,15 +245,6 @@
       <a href="https://chrome.google.com/webstore/detail/tawia" class="cta-button" target="_blank">
         Réinstaller Tawia
       </a>
-    </div>
-
-    <div class="feedback-section">
-      <p>
-        Une suggestion pour améliorer Tawia ?
-        <a href="https://github.com/sammolawlify/tawia/issues" class="feedback-link" target="_blank">
-          Partagez votre feedback →
-        </a>
-      </p>
     </div>
   </div>
 </body>
